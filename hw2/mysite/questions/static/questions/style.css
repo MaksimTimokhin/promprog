@@ -1,0 +1,17 @@
+li {
+    font-size: 30;
+    color: green;
+}
+a {
+    font-size: 30;
+    color: green;
+}
+h1 {
+    font-size: 50;
+    color: red;
+}
+
+body {
+    background: white url("images/background.gif");
+    opacity: 0.7;
+}

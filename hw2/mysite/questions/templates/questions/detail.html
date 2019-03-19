@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+
+<h1>{{ question.question_text }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'questions:answer' question.id %}" method="post">
+{% csrf_token %}
+    <input type="text" name="answer">
+<input type="submit" value="Send answer">
+</form>
+
+<ul>
+{% for answer in question.answer_set.all %}
+    <li>{{ answer.answer_text }}</li>
+{% endfor %}
+</ul>
