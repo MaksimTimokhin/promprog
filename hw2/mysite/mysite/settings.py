@@ -25,7 +25,7 @@ SECRET_KEY = '_r%hnq&9n#oh#i19_mj+cb(*q@a9ht41k)h_)1&tg3_(=*iory'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
